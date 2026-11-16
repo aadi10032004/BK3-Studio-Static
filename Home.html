@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+  <title>BK3 Studios - Premier Verified Non-Film Studio Booking Platform</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Roboto+Flex:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+    id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#dcd9d9", "on-surface-variant": "#5e3f3b", "tertiary-container": "#906b00", "surface-container-lowest": "#ffffff", "inverse-surface": "#313030", "surface-container": "#f0edec", "on-primary": "#ffffff", "secondary": "#a04100", "on-secondary-fixed-variant": "#7a3000", "on-tertiary": "#ffffff", "surface-container-low": "#f6f3f2", "on-secondary-fixed": "#351000", "surface-variant": "#e5e2e1", "on-background": "#1c1b1b", "on-secondary": "#ffffff", "inverse-primary": "#ffb4aa", "secondary-fixed-dim": "#ffb693", "primary-fixed": "#ffdad5", "on-surface": "#1c1b1b", "on-error": "#ffffff", "on-secondary-container": "#5e2300", "tertiary-fixed-dim": "#fabd10", "primary": "#b5000a", "secondary-fixed": "#ffdbcc", "outline": "#936e69", "error-container": "#ffdad6", "secondary-container": "#fd7628", "outline-variant": "#e8bcb6", "error": "#ba1a1a", "surface-container-highest": "#e5e2e1", "on-tertiary-container": "#fff5e8", "surface-tint": "#c0000b", "primary-container": "#e20812", "tertiary-fixed": "#ffdf9e", "on-tertiary-fixed-variant": "#5b4300", "surface": "#fcf9f8", "primary-fixed-dim": "#ffb4aa", "surface-container-high": "#ebe7e7", "on-primary-fixed-variant": "#930006", "on-tertiary-fixed": "#261a00", "tertiary": "#715400", "on-primary-container": "#fff4f2", "background": "#fcf9f8", "inverse-on-surface": "#f3f0ef", "surface-bright": "#fcf9f8", "on-error-container": "#93000a", "on-primary-fixed": "#410001" }, borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }, spacing: { "space-sm": "0.5rem", "space-xl": "2.5rem", margin: "3rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", gutter: "1.5rem", "margin-mobile": "1.25rem", "space-md": "1rem" }, fontFamily: { "label-md": ["Roboto Flex"], "label-lg": ["Roboto Flex"], "headline-md-mobile": ["Anton"], "body-lg": ["Roboto Flex"], "headline-lg": ["Anton"], "headline-lg-mobile": ["Anton"], display: ["Anton"], "headline-sm": ["Anton"], "headline-md": ["Anton"], "body-sm": ["Roboto Flex"], "label-sm": ["Roboto Flex"], "body-md": ["Roboto Flex"], "display-mobile": ["Anton"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.06em", fontWeight: "700" }], "headline-md-mobile": ["24px", { lineHeight: "30px", letterSpacing: "0.03em", fontWeight: "400" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "headline-lg": ["48px", { lineHeight: "52px", letterSpacing: "0.02em", fontWeight: "400" }], "headline-lg-mobile": ["32px", { lineHeight: "36px", letterSpacing: "0.02em", fontWeight: "400" }], display: ["64px", { lineHeight: "68px", letterSpacing: "0.02em", fontWeight: "400" }], "headline-sm": ["22px", { lineHeight: "28px", letterSpacing: "0.04em", fontWeight: "400" }], "headline-md": ["32px", { lineHeight: "38px", letterSpacing: "0.03em", fontWeight: "400" }], "body-sm": ["13px", { lineHeight: "18px", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }], "body-md": ["15px", { lineHeight: "22px", fontWeight: "400" }], "display-mobile": ["40px", { lineHeight: "44px", letterSpacing: "0.02em", fontWeight: "400" }] } } } }</script>
+
+  <style>
+    .mobile-nav-link {
+      display: block;
+      padding: 0.85rem 0.75rem;
+      border-radius: 0.5rem;
+      color: inherit;
+      font-family: "Roboto Flex", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: background-color 160ms ease, color 160ms ease;
+    }
+
+    .mobile-nav-link:hover,
+    .mobile-nav-link:focus-visible {
+      background: rgba(0, 0, 0, 0.05);
+      outline: none;
+    }
+  </style>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased">
+  <header
+    class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-surface-variant/80 shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-20 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm focus:outline-none"
+          data-path="home" href="Home.html">
+          <div class="flex items-end gap-1 h-7">
+            <div class="w-1.5 h-6 bg-primary-container rounded-xs"></div>
+            <div class="w-1.5 h-4 bg-secondary-container rounded-xs"></div>
+            <div class="w-1.5 h-7 bg-tertiary-fixed-dim rounded-xs"></div>
+            <div class="w-1.5 h-3 bg-secondary rounded-xs"></div>
+            <div class="w-1.5 h-5 bg-primary rounded-xs"></div>
+          </div>
+          <div class="flex flex-col"><span
+              class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface leading-none">BK3
+              Studios</span><span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Acoustic
+              Index</span></div>
+        </a>
+        <div class="relative hidden 2xl:flex items-center">
+          <div
+            class="flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-low border border-surface-variant rounded-lg text-on-surface">
+            <span class="material-symbols-outlined text-[18px] text-primary">location_on</span><select
+              class="bg-transparent font-label-md text-label-md uppercase tracking-wide text-on-surface focus:outline-none cursor-pointer pr-2">
+              <option value="all-india">All India Hubs</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="delhi-ncr">Delhi NCR</option>
+              <option value="bengaluru">Bengaluru</option>
+              <option value="hyderabad">Hyderabad</option>
+              <option selected="" value="pune">Pune</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <nav class="hidden lg:flex items-center gap-space-lg"
+        data-active-classes="text-primary-container font-bold border-b-2 border-primary-container pb-0.5">
+
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+          href="/">
+          Home
+        </a>
+
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+          data-path="the-network" href="/the-network">
+          The Network
+        </a>
+
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+          data-path="why-bk3" href="/why-bk3">
+          Why BK3
+        </a>
+
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+          data-path="what-we-do" href="/what-we-do">
+          What We Do
+        </a>
+
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+          data-path="studio-partners" href="/studio-partners">
+          Studio Partners
+        </a>
+
+        <a class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
+          href="/ContactUs">
+          Contact Us
+        </a>
+
+      </nav>
+      <div class="flex items-center gap-space-md"><a
+          class="hidden md:inline-flex items-center px-space-md py-2 border border-on-surface text-on-surface rounded-lg font-label-md text-label-md uppercase tracking-wider hover:bg-on-surface hover:text-on-primary transition-colors"
+          data-path="studio-partners" href="#">I Own a Studio</a><a
+          class="hidden sm:inline-flex items-center px-space-lg py-2.5 bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg uppercase tracking-wider hover:bg-inverse-surface transition-colors"
+          data-path="the-network" href="#">Find a Studio</a>
+        <div
+          class="hidden sm:flex w-8 h-8 rounded-full bg-surface-container-high border border-surface-variant flex items-center justify-center">
+          <span class="material-symbols-outlined text-on-surface-variant text-[18px]">verified_user</span>
+        </div>
+      </div>
+
+      <!-- Hamburger button: visible below the desktop navigation breakpoint -->
+      <button id="mobileMenuBtn" type="button"
+        class="lg:hidden inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-surface-variant text-on-surface hover:bg-surface-container-low focus:outline-none focus:ring-2 focus:ring-primary-container"
+        aria-label="Open navigation menu" aria-controls="mobileMenu" aria-expanded="false">
+        <span id="mobileMenuIcon" class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobileMenu"
+      class="hidden lg:hidden absolute top-full left-0 w-full bg-surface-container-lowest border-t border-surface-variant shadow-lg">
+      <nav class="flex flex-col px-margin-mobile py-space-md gap-1" aria-label="Mobile navigation">
+        <a href="Home.html" class="mobile-nav-link">Home</a>
+        <a href="#" data-path="the-network" class="mobile-nav-link">The Network</a>
+        <a href="#" data-path="why-bk3" class="mobile-nav-link">Why BK3</a>
+        <a href="#" data-path="what-we-do" class="mobile-nav-link">What We Do</a>
+        <a href="#" data-path="studio-partners" class="mobile-nav-link">Studio Partners</a>
+        <a href="ContactUs.html" class="mobile-nav-link">Contact Us</a>
+        <div class="border-t border-surface-variant mt-space-sm pt-space-md flex flex-col gap-space-sm">
+          <a href="#" data-path="studio-partners"
+            class="mobile-nav-link border border-on-surface text-center rounded-lg">I Own a Studio</a>
+          <a href="#" data-path="the-network"
+            class="inline-flex items-center justify-center px-space-lg py-3 bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg uppercase tracking-wider">Find
+            a Studio</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]">
+    <div class="flex flex-col w-full">
+      <!-- Top Operational Banner & Dynamic Ticker -->
+      <section
+        class="w-full bg-surface-container-low px-margin-mobile lg:px-margin py-space-sm flex flex-col md:flex-row items-center justify-between gap-space-sm">
+        <div class="flex items-center gap-space-sm">
+          <span
+            class="inline-flex items-center gap-1.5 px-space-xs py-0.5 bg-surface-container-highest rounded-DEFAULT text-primary font-label-sm text-label-sm uppercase">
+            <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+            Live Index
+          </span>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+            104 In-Person Audited Stages Across Pune, Mumbai, Delhi NCR, Bengaluru &amp; Hyderabad
+          </span>
+        </div>
+        <div class="flex items-center gap-space-md font-label-sm text-label-sm uppercase text-on-surface-variant">
+          <span class="flex items-center gap-1"><span
+              class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim">verified</span> Physical Decibel
+            Checked</span>
+          <span class="w-1 h-1 rounded-full bg-surface-container-highest"></span>
+          <span class="flex items-center gap-1"><span
+              class="material-symbols-outlined text-[14px] text-primary">schedule</span> Average Confirmation: 2.8
+            Min</span>
+        </div>
+      </section>
+      <!-- Hero Section -->
+      <section class="w-full px-margin-mobile lg:px-margin pt-space-xl pb-space-lg relative overflow-hidden bg-surface">
+        <!-- Subtle Architectural Acoustic Grid Backdrop -->
+        <div
+          class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(#e5e2e1_1px,transparent_1px)] [background-size:24px_24px]">
+        </div>
+        <div class="relative w-full max-w-7xl mx-auto flex flex-col gap-space-lg">
+          <!-- Eyebrow with Meter Visualizer -->
+          <div class="flex flex-wrap items-center gap-space-sm">
+            <div
+              class="inline-flex items-center gap-2 px-space-sm py-1 bg-surface-container rounded-DEFAULT text-on-surface shadow-sm">
+              <div class="flex items-end gap-0.5 h-3.5">
+                <span class="w-1 bg-primary-container h-3.5"></span>
+                <span class="w-1 bg-secondary-container h-2.5"></span>
+                <span class="w-1 bg-tertiary-fixed-dim h-3"></span>
+                <span class="w-1 bg-primary h-1.5"></span>
+              </div>
+              <span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">India's Premier
+                Non-Film Studio Network</span>
+            </div>
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold px-space-xs py-0.5 bg-primary-fixed rounded-DEFAULT">
+              100% In-Person Audited
+            </span>
+          </div>
+          <!-- Main Asymmetric Hero Statement -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+            <div class="lg:col-span-8">
+              <h1 class="font-display text-display uppercase tracking-tight text-on-surface leading-none">
+                100+ STUDIOS.<br />
+                <span class="text-primary-container">ZERO GUESSWORK.</span>
+              </h1>
+            </div>
+            <div class="lg:col-span-4 flex flex-col gap-space-md">
+              <p class="font-body-lg text-body-lg text-on-surface-variant">
+                Podcast rooms, photo cycs, voice isolation booths, and broadcast spaces. Every square foot inspected
+                physically, calibrated for acoustics, and priced upfront.
+              </p>
+              <div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+                <a class="inline-flex items-center justify-center px-space-lg py-3 bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-wider rounded-lg shadow-sm hover:bg-inverse-surface transition-colors"
+                  href="#search-engine">
+                  Find a Studio
+                </a>
+                <a class="inline-flex items-center justify-center px-space-lg py-3 bg-surface-container-high text-on-surface font-label-lg text-label-lg uppercase tracking-wider rounded-lg hover:bg-inverse-surface hover:text-on-primary transition-colors"
+                  href="#crews">
+                  Get a Crew
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Live Operational Data Metric Bar -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter pt-space-md">
+            <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+              <span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Avg Room Noise Floor</span>
+              <div class="flex items-baseline gap-1 mt-space-xs">
+                <span class="font-headline-sm text-headline-sm text-on-surface">&lt; 26</span>
+                <span class="font-label-md text-label-md uppercase text-primary font-bold">dBA</span>
+              </div>
+            </div>
+            <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+              <span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Broker Commission</span>
+              <div class="flex items-baseline gap-1 mt-space-xs">
+                <span class="font-headline-sm text-headline-sm text-on-surface">₹ 0</span>
+                <span class="font-label-md text-label-md uppercase text-secondary font-bold">Direct Rates</span>
+              </div>
+            </div>
+            <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+              <span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Instant Confirmation</span>
+              <div class="flex items-baseline gap-1 mt-space-xs">
+                <span class="font-headline-sm text-headline-sm text-on-surface">100%</span>
+                <span class="font-label-md text-label-md uppercase text-tertiary font-bold">Live Cal</span>
+              </div>
+            </div>
+            <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between shadow-sm">
+              <span class="font-label-sm text-label-sm uppercase text-on-surface-variant">On-Demand Crews</span>
+              <div class="flex items-baseline gap-1 mt-space-xs">
+                <span class="font-headline-sm text-headline-sm text-on-surface">320+</span>
+                <span class="font-label-md text-label-md uppercase text-on-surface-variant">Operators</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Interactive Studio Search Engine & City Matrix -->
+      <section class="w-full px-margin-mobile lg:px-margin -mt-4 relative z-20" id="search-engine">
+        <div class="max-w-7xl mx-auto bg-surface-container-lowest p-space-md lg:p-space-lg rounded-xl shadow-xl">
+          <!-- Search Form Inputs -->
+          <form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center" id="studioSearchForm"
+            onsubmit="event.preventDefault(); triggerSearch();">
+            <!-- Location Dropdown -->
+            <div class="lg:col-span-3 flex flex-col bg-surface-container-low p-space-sm rounded-lg">
+              <label
+                class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1"
+                for="locationInput">
+                <span class="material-symbols-outlined text-[14px] text-primary">location_on</span> Studio City / Region
+              </label>
+              <select
+                class="mt-1 bg-transparent font-label-md text-label-md uppercase tracking-wide text-on-surface focus:outline-none cursor-pointer"
+                id="locationInput">
+                <option value="pune">Pune (Koregaon, Undri, Baner, Kothrud)</option>
+                <option value="mumbai">Mumbai (Andheri, Bandra, Goregaon)</option>
+                <option value="delhi-ncr">Delhi NCR (Noida, Gurgaon, Okhla)</option>
+                <option value="bengaluru">Bengaluru (Indiranagar, Koramangala)</option>
+                <option value="hyderabad">Hyderabad (Jubilee Hills, Hitec City)</option>
+                <option value="all-india">All India Network</option>
+              </select>
+            </div>
+            <!-- Space Archetype -->
+            <div class="lg:col-span-3 flex flex-col bg-surface-container-low p-space-sm rounded-lg">
+              <label
+                class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1"
+                for="archetypeInput">
+                <span class="material-symbols-outlined text-[14px] text-secondary">category</span> Space Archetype
+              </label>
+              <select
+                class="mt-1 bg-transparent font-label-md text-label-md uppercase tracking-wide text-on-surface focus:outline-none cursor-pointer"
+                id="archetypeInput">
+                <option value="podcast">Podcast &amp; Vodcast Studios</option>
+                <option value="cyc">Infinity Cyc &amp; Photography</option>
+                <option value="music">Music Recording &amp; Dubbing</option>
+                <option value="film">Chroma Key &amp; Drive-in Stages</option>
+                <option value="reels">Content &amp; Creator Sets</option>
+                <option value="milestone">Family &amp; Maternity Suites</option>
+              </select>
+            </div>
+            <!-- Session Date -->
+            <div class="lg:col-span-3 flex flex-col bg-surface-container-low p-space-sm rounded-lg">
+              <label
+                class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1"
+                for="dateInput">
+                <span class="material-symbols-outlined text-[14px] text-tertiary">calendar_today</span> Session Date
+              </label>
+              <input
+                class="mt-1 bg-transparent font-label-md text-label-md uppercase text-on-surface focus:outline-none"
+                id="dateInput" type="date" value="2025-05-18" />
+            </div>
+            <!-- Submit Button -->
+            <div class="lg:col-span-3 h-full">
+              <button
+                class="w-full h-full min-h-[52px] bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-wider rounded-lg shadow-sm hover:bg-inverse-surface transition-colors flex items-center justify-center gap-2"
+                type="submit">
+                <span class="material-symbols-outlined text-[20px]">search</span>
+                <span>Search Studios</span>
+              </button>
+            </div>
+          </form>
+          <!-- Quick City Filters & Confidence Statement -->
+          <div
+            class="mt-space-md pt-space-sm flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-sm">
+            <div class="flex flex-wrap items-center gap-space-xs">
+              <span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider mr-1">Hot
+                Hubs:</span>
+              <button
+                class="px-space-sm py-1 rounded-DEFAULT bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase hover:bg-on-surface hover:text-on-primary transition-colors"
+                onclick="setCity('pune')" type="button">Pune (38)</button>
+              <button
+                class="px-space-sm py-1 rounded-DEFAULT bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase hover:bg-on-surface hover:text-on-primary transition-colors"
+                onclick="setCity('mumbai')" type="button">Mumbai (29)</button>
+              <button
+                class="px-space-sm py-1 rounded-DEFAULT bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase hover:bg-on-surface hover:text-on-primary transition-colors"
+                onclick="setCity('delhi-ncr')" type="button">Delhi NCR (21)</button>
+              <button
+                class="px-space-sm py-1 rounded-DEFAULT bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase hover:bg-on-surface hover:text-on-primary transition-colors"
+                onclick="setCity('bengaluru')" type="button">Bengaluru (16)</button>
+            </div>
+            <div class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase text-on-surface-variant">
+              <span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">verified</span>
+              <span>Verified Specs • Zero Broker Fees • Pay Directly at Studio</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Interactive Archetype Explorer: 'WHAT ARE YOU MAKING?' -->
+      <section class="w-full px-margin-mobile lg:px-margin py-space-xl bg-surface">
+        <div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+            <div>
+              <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Space
+                Archetypes</span>
+              <h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-1">WHAT ARE YOU MAKING?</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                Tap any space category to pre-fill search and inspect verified acoustic and physical specs.
+              </p>
+            </div>
+            <div class="flex items-center gap-space-xs">
+              <button aria-label="Previous categories"
+                class="w-10 h-10 rounded-DEFAULT bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container-highest transition-colors"
+                onclick="scrollArchetypes(-1)" type="button">
+                <span class="material-symbols-outlined text-[20px]">west</span>
+              </button>
+              <button aria-label="Next categories"
+                class="w-10 h-10 rounded-DEFAULT bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container-highest transition-colors"
+                onclick="scrollArchetypes(1)" type="button">
+                <span class="material-symbols-outlined text-[20px]">east</span>
+              </button>
+            </div>
+          </div>
+          <!-- Horizontal Bento Grid / Interactive Categories Slider -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter overflow-x-auto pb-space-sm scroll-smooth"
+            id="archetypeScroller">
+            <!-- 01: Podcast & Vodcast -->
+            <div
+              class="cursor-pointer group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              onclick="selectCategory('podcast')">
+              <div class="relative h-56 w-full overflow-hidden">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                  data-alt="A professional high-end podcast recording studio room with dark acoustic slat wall panels, Rode mic arms, warm neon accent strip lights, Shure SM7B microphones, and four comfortable leather guest armchairs in light minimal setting."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_pcBBBgjM_iNRpgHjg9Yo7phr0Ls1ZBxdmm6_7QteQxcBmS-PT0NTHaYyHuWQiaI3Fy9X7OBRYKOJ-hc-e6vWva1vIEiDBEOVjLOFYk55kqRY6iVQbtwETsEcqj40DZU6W6z5msSLJsIMOh6_0Xni9_Q45Mli6m-EIlljc8Vm_Tlf02pmlqK9nvhG3MolGeMGvsKOC55KD3nDvmvaQUXlcUzedlrdujF11ji7U_w')">
+                </div>
+                <div
+                  class="absolute top-space-sm left-space-sm bg-inverse-surface text-inverse-on-surface px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  24 Active Rooms
+                </div>
+                <div
+                  class="absolute bottom-space-sm right-space-sm bg-surface-container-lowest text-on-surface px-space-sm py-1 rounded-DEFAULT font-headline-sm text-headline-sm">
+                  From ₹800<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">/hr</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-grow">
+                <div>
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors">
+                      Podcast &amp; Vodcast</h3>
+                    <span
+                      class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Multi-cam 4K capture rigs, Shure
+                    SM7B arrays, soundproof booths with RT60 below 0.22s.</p>
+                </div>
+                <div
+                  class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+                  <span>Shure • Rode • Blackmagic</span>
+                  <span class="text-primary font-bold">Instant Book</span>
+                </div>
+              </div>
+            </div>
+            <!-- 02: Photography & Cyc -->
+            <div
+              class="cursor-pointer group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              onclick="selectCategory('cyc')">
+              <div class="relative h-56 w-full overflow-hidden">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                  data-alt="A pristine white seamless infinity cyclorama studio floor with ceiling-mounted Godox light diffusers, C-stands, industrial concrete styling, and ample open creative staging space in a bright airy studio."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB55XpfMXHoayeR2wiCu3TMkxJ7lIYzPvnuH3gYVr8DJNRQ9WXtrTkXzNnZq7EbcVuxTrpemYWRN6G1YF0hFwBXyQgJz503-fGSYgYtzKU1SBlcdV-yNo_pXk1fmxRV9evNyLbtwXxc3YxsTzVqm9Bb0GV2FuVGk-FBk_xZuO64ijur-MMhWANz_fhVqSiaMBl-3_sNDL57ya2zZynWCYNjKTvjJvq0wDUNPL5DoiQ')">
+                </div>
+                <div
+                  class="absolute top-space-sm left-space-sm bg-inverse-surface text-inverse-on-surface px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+                  38 Active Cycs
+                </div>
+                <div
+                  class="absolute bottom-space-sm right-space-sm bg-surface-container-lowest text-on-surface px-space-sm py-1 rounded-DEFAULT font-headline-sm text-headline-sm">
+                  From ₹1,200<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">/hr</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-grow">
+                <div>
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors">
+                      Photography &amp; Cyc</h3>
+                    <span
+                      class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Seamless infinity corners, high
+                    ceiling clearance, pre-hung motorized trusses &amp; 3-phase power.</p>
+                </div>
+                <div
+                  class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+                  <span>Elinchrom • Profoto • C-Stands</span>
+                  <span class="text-secondary font-bold">Drive-in Access</span>
+                </div>
+              </div>
+            </div>
+            <!-- 03: Music & Voice -->
+            <div
+              class="cursor-pointer group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              onclick="selectCategory('music')">
+              <div class="relative h-56 w-full overflow-hidden">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                  data-alt="An acoustic recording control room with Genelec studio monitors, wooden diffuser walls, analog mixing console with illuminated LED faders, and a separate vocal booth visible through double glass."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAK9WFVsLwGQwwfsVEvefS-jegwkwSWS9rzHvz76Uf6I2XEOWRMNWNROMVBgdB_k0zym1_JFUivyCCG_1ze6W_iztqUgNFU-9nXz--TeBrvq76Cpmm5TFfnKgsugGT4J4564NvJ3sZYUpznWH_b10ONGsJ8YP0zsg7NlvRPRGaGglB4FDjlFBsL9adi_yOXb42uu2BZBBnZT0wWHbaSwiyxwpCH-rgKTTqwFQs8BCo')">
+                </div>
+                <div
+                  class="absolute top-space-sm left-space-sm bg-inverse-surface text-inverse-on-surface px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+                  19 Sound Labs
+                </div>
+                <div
+                  class="absolute bottom-space-sm right-space-sm bg-surface-container-lowest text-on-surface px-space-sm py-1 rounded-DEFAULT font-headline-sm text-headline-sm">
+                  From ₹950<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">/hr</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-grow">
+                <div>
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors">
+                      Music &amp; Voice Labs</h3>
+                    <span
+                      class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Floating floors, double-door
+                    airlocks, Neumann U87 booths, and certified Dolby Atmos monitoring.</p>
+                </div>
+                <div
+                  class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+                  <span>Neumann • Apollo X8 • Genelec</span>
+                  <span class="text-tertiary font-bold">Sound Isolation A+</span>
+                </div>
+              </div>
+            </div>
+            <!-- 04: Film & Video -->
+            <div
+              class="cursor-pointer group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              onclick="selectCategory('film')">
+              <div class="relative h-56 w-full overflow-hidden">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                  data-alt="A large soundstage with high acoustic baffles, drive-in roll-up doors, heavy-duty overhead grid system, green screen chroma cyclorama, and movie production lighting carts."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzUZXuk0Ccsg1UsZl8EAq5jcF9GCZ_hvuuG2YTK9TMCz8mKZybcc7_3jVIOHLjez5HgydZGRz2di8oHUvzdeP60y8aJLzCbxZ_oZv5I7X-h0AZ2f-cqwXWzmObQZIkWI7mxVSOVs74qnDPbfTAfObNs9CPnHdUja10COc-wigIx-FOoiiwoeG8O_cNDsRkNisEOeJRgSmYJoX1N7KgQLh_5eqPaGuNLfM0hTyZrEs')">
+                </div>
+                <div
+                  class="absolute top-space-sm left-space-sm bg-inverse-surface text-inverse-on-surface px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  14 Mega Stages
+                </div>
+                <div
+                  class="absolute bottom-space-sm right-space-sm bg-surface-container-lowest text-on-surface px-space-sm py-1 rounded-DEFAULT font-headline-sm text-headline-sm">
+                  From ₹2,500<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">/hr</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-grow">
+                <div>
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors">
+                      Film &amp; Video Soundstages</h3>
+                    <span
+                      class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">High-amperage generator backups,
+                    drive-in vehicle bay doors, makeup vanities, and green rooms.</p>
+                </div>
+                <div
+                  class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+                  <span>Arri Skypanels • 63A Power</span>
+                  <span class="text-on-surface font-bold">OTT Ready</span>
+                </div>
+              </div>
+            </div>
+            <!-- 05: Reels & Content -->
+            <div
+              class="cursor-pointer group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              onclick="selectCategory('reels')">
+              <div class="relative h-56 w-full overflow-hidden">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                  data-alt="A modern influencer and creator studio set featuring modular neon backdrops, pastel aesthetic furniture, vertical phone tripod rigs, Nanlite pavotube lights, and stylish props."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6StbTSyBNsQoncLQBQ8vHBRFdXTU7HJC39oFotd5c2A95tW48AqFm4WrthiGUdaikafxFfYI2CTNyZGSx7A8w6ij73p1lTn_luhotvh8N5WiZLIS99w2JhCNMA5pzbC-anojwx4jz_vf5UZGSy3lk2xx8STHzejwXiiROcSBA47qCcpIMSJeaYvbiaRQqtS7np7jMK2JRI8-VxhK9n_F5B30cgpeKYvwWyE9X2XY')">
+                </div>
+                <div
+                  class="absolute top-space-sm left-space-sm bg-inverse-surface text-inverse-on-surface px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  27 Creator Sets
+                </div>
+                <div
+                  class="absolute bottom-space-sm right-space-sm bg-surface-container-lowest text-on-surface px-space-sm py-1 rounded-DEFAULT font-headline-sm text-headline-sm">
+                  From ₹600<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">/hr</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-grow">
+                <div>
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors">
+                      Reels &amp; Creator Sets</h3>
+                    <span
+                      class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Trendy modular setups,
+                    app-controlled RGB ambient light rigs, high-speed fiber internet for streams.</p>
+                </div>
+                <div
+                  class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+                  <span>RGB Tubes • Vertical Rigs</span>
+                  <span class="text-secondary font-bold">Fast Turnaround</span>
+                </div>
+              </div>
+            </div>
+            <!-- 06: Milestones & Family -->
+            <div
+              class="cursor-pointer group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              onclick="selectCategory('milestone')">
+              <div class="relative h-56 w-full overflow-hidden">
+                <div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                  data-alt="A warm naturally lit photography portrait studio with sheer curtains, hardwood flooring, soft neutral linen couches, boho baby props, and large floor-to-ceiling sunlight windows."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVTdFH_zT8Ypr_KtPcatuhqsX5urtqePrAcFm_WQvkVrliAQ4YeNlu12Svg7SsfpWxWQ0Vms4O6tV5yRaOuR3QRXCEECRiBzPJjnsIc9KHjaUldMyLgZEDLioAJ1ynqccmCoI7zrGyg_LXNHmqlGJM5exDLSAjATRIyyGS2p9U7AtuVP3d_a4BO7YwLNbR6n69FjKggKqSyIcZpqktZtsjn6Q3X85llSafcPQ-Br4')">
+                </div>
+                <div
+                  class="absolute top-space-sm left-space-sm bg-inverse-surface text-inverse-on-surface px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  16 Daylight Suites
+                </div>
+                <div
+                  class="absolute bottom-space-sm right-space-sm bg-surface-container-lowest text-on-surface px-space-sm py-1 rounded-DEFAULT font-headline-sm text-headline-sm">
+                  From ₹1,100<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">/hr</span>
+                </div>
+              </div>
+              <div class="p-space-md flex flex-col justify-between flex-grow">
+                <div>
+                  <div class="flex items-center justify-between">
+                    <h3
+                      class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors">
+                      Milestones &amp; Family</h3>
+                    <span
+                      class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Temperature controlled, sanitized
+                    spaces with maternity styling wardrobe and natural sunlight windows.</p>
+                </div>
+                <div
+                  class="mt-space-md pt-space-sm flex items-center justify-between font-label-sm text-label-sm uppercase text-on-surface-variant">
+                  <span>Natural Sun • Baby Safe</span>
+                  <span class="text-tertiary font-bold">Air Purified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pillar Strip: The BK3 Production Commitment -->
+      <section class="w-full bg-surface-container-low px-margin-mobile lg:px-margin py-space-xl">
+        <div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+          <div class="flex flex-col gap-space-xs">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">The BK3
+              Protocol</span>
+            <h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">ENGINEERED FOR PRODUCTION CERTAINTY
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+            <!-- Pillar 01 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <span class="font-headline-sm text-headline-sm text-primary">01</span>
+                  <span class="material-symbols-outlined text-primary text-[28px]">speed</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Book In Minutes</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Anywhere in India, even three hours before call-time. Our real-time calendar handshake eliminates the
+                  frustrating “let me check if the slot is free” delay.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-sm bg-surface-container-high px-space-sm py-1 rounded-DEFAULT font-label-sm text-label-sm uppercase text-on-surface">
+                Avg Confirmation: &lt; 3 Min
+              </div>
+            </div>
+            <!-- Pillar 02 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <span class="font-headline-sm text-headline-sm text-secondary">02</span>
+                  <span class="material-symbols-outlined text-secondary text-[28px]">graphic_eq</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Checked In Person</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  We physically deploy acoustic technicians to every room. The strobe output, wireless lav mics, and
+                  ambient decibel noise floors listed are guaranteed true.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-sm bg-surface-container-high px-space-sm py-1 rounded-DEFAULT font-label-sm text-label-sm uppercase text-on-surface">
+                Full Decibel Verification
+              </div>
+            </div>
+            <!-- Pillar 03 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <span class="font-headline-sm text-headline-sm text-tertiary">03</span>
+                  <span class="material-symbols-outlined text-tertiary text-[28px]">payments</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Priced Upfront</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  No hidden agency cuts, surprise electricity surcharges, or on-site haggling. Transparent hourly and
+                  full-day rate sheets backed by standardized digital invoices.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-sm bg-surface-container-high px-space-sm py-1 rounded-DEFAULT font-label-sm text-label-sm uppercase text-on-surface">
+                0% Broker Markup Guarantee
+              </div>
+            </div>
+            <!-- Pillar 04 -->
+            <div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+              <div class="flex flex-col gap-space-sm">
+                <div class="flex items-center justify-between">
+                  <span class="font-headline-sm text-headline-sm text-on-surface">04</span>
+                  <span class="material-symbols-outlined text-on-surface text-[28px]">flex_wrap</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">Fits Every Moment</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  From an emergent creator podcast pilot or a baby's newborn shoot to full-scale commercial ad
+                  productions—scale crew, equipment, and stage space seamlessly.
+                </p>
+              </div>
+              <div
+                class="mt-space-md pt-space-sm bg-surface-container-high px-space-sm py-1 rounded-DEFAULT font-label-sm text-label-sm uppercase text-on-surface">
+                Flexible Add-on Crews
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trending On The Network (Curated Verified Spaces) -->
+      <section class="w-full px-margin-mobile lg:px-margin py-space-xl bg-surface">
+        <div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+                <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Hand-Audited
+                  High Performers</span>
+              </div>
+              <h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mt-1">TRENDING ON THE NETWORK</h2>
+            </div>
+            <a class="inline-flex items-center gap-1 font-label-lg text-label-lg uppercase tracking-wider text-primary hover:text-on-surface transition-colors"
+              href="#search-engine">
+              <span>Explore All 104 Studios</span>
+              <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span>
+            </a>
+          </div>
+          <!-- Studio Listing Cards Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+            <!-- Card 1: Pune Soundstage -->
+            <article
+              class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+              <div class="relative h-64 w-full">
+                <div class="w-full h-full bg-cover bg-center"
+                  data-alt="High-end acoustic broadcast soundstage in Koregaon Park Pune with dark foam treatment, professional robotic 4K cameras, curved sit-down table, audio mixing workstation, and warm cinematic ceiling lighting."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGkGNhSwjOqJ4R0ctD2eRloZ_5ZHII0-ykJ4hEGGGLj8ehp6xFJiN5vDhyXEP8NT8Qz9qZZUWeNwWu_qUchP1dm7NmslUcUVZqVcPTLuovHYXNhgFWNqRQyveGBkn1wGgfqciwGf1RPMw0TrlE0WDRm_YQVeR7y6hwFukduaWRzSDRlFJqN5SfVQEapdvILu58cKqTqCHn3W61P1TKqAeMdYtJ5QEtigugFx_ZX9c')">
+                </div>
+                <!-- Badges -->
+                <div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+                  <span
+                    class="bg-inverse-surface text-inverse-on-surface px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1 shadow-sm">
+                    <span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">verified</span>
+                    Audited May 2025
+                  </span>
+                  <span
+                    class="bg-primary text-on-primary px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider">
+                    Top Rated in Pune
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-space-sm right-space-sm bg-surface px-space-sm py-1 rounded-DEFAULT font-label-md text-label-md uppercase text-on-surface shadow-sm">
+                  Koregaon Park, Pune
+                </div>
+              </div>
+              <div class="p-space-lg flex flex-col justify-between flex-grow gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Vodcast &amp; Live
+                      Stream Suite</span>
+                    <div class="flex items-center gap-1 text-on-surface">
+                      <span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim fill-1">star</span>
+                      <span class="font-label-md text-label-md font-bold">4.96</span>
+                      <span class="text-on-surface-variant font-label-sm text-label-sm">(34 shoots)</span>
+                    </div>
+                  </div>
+                  <h3 class="font-headline-md text-headline-md uppercase text-on-surface leading-tight">The Resonance
+                    Broadcast Bay</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Triple-wall floating decoupling with
+                    automated Blackmagic 6K Pro cameras and whisper-quiet HVAC.</p>
+                </div>
+                <!-- Tech Spec Matrix Grid -->
+                <div class="grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-lg text-center">
+                  <div>
+                    <span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Noise Floor</span>
+                    <span class="font-label-md text-label-md uppercase font-bold text-on-surface">22.4 dBA</span>
+                  </div>
+                  <div>
+                    <span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Reverb Time</span>
+                    <span class="font-label-md text-label-md uppercase font-bold text-on-surface">0.18s RT60</span>
+                  </div>
+                  <div>
+                    <span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Dimensions</span>
+                    <span class="font-label-md text-label-md uppercase font-bold text-on-surface">650 Sq Ft</span>
+                  </div>
+                </div>
+                <!-- Action & Price Footer -->
+                <div class="flex items-center justify-between pt-space-xs">
+                  <div>
+                    <span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Standard Rate</span>
+                    <div class="font-headline-sm text-headline-sm text-on-surface">
+                      ₹1,150 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ hr</span>
+                    </div>
+                  </div>
+                  <button
+                    class="px-space-md py-2.5 bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-lg hover:bg-inverse-surface transition-colors shadow-sm"
+                    onclick="quickBook('Resonance Broadcast Bay')" type="button">
+                    Book Slot
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Card 2: Mumbai Mega Cyc -->
+            <article
+              class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+              <div class="relative h-64 w-full">
+                <div class="w-full h-full bg-cover bg-center"
+                  data-alt="Massive white eggshell cyclorama soundstage in Andheri West Mumbai with heavy motorized lighting grid overhead, rolling equipment flight cases, and double hair-and-makeup mirrors."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCq7BYh3jJ870LKtkf8GYge03xSMJHDyPNPg-hWaq_tK_rvuJpViAdQpAumFdfw-HZXMEPRoHjeSM6en8qdy-tP_32ldzaV3Bi2-9eFg7j5eSdwM07T_OCmp6cYAUpOmGAcUTQIRU-B60y7NVBYO8MuE7IOdhZVv1x5ClzdAmBQYWL_lB1vSGfCIRs2ePeOE1Htmfylnk1MP8jlP6NLVJa0WamN08RMmkoGV8qm1ZY')">
+                </div>
+                <div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+                  <span
+                    class="bg-inverse-surface text-inverse-on-surface px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1 shadow-sm">
+                    <span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">verified</span>
+                    Audited Apr 2025
+                  </span>
+                  <span
+                    class="bg-secondary-container text-on-secondary-container px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider">
+                    Drive-In Ready
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-space-sm right-space-sm bg-surface px-space-sm py-1 rounded-DEFAULT font-label-md text-label-md uppercase text-on-surface shadow-sm">
+                  Andheri West, Mumbai
+                </div>
+              </div>
+              <div class="p-space-lg flex flex-col justify-between flex-grow gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Infinity Cyc &amp;
+                      Chroma Soundstage</span>
+                    <div class="flex items-center gap-1 text-on-surface">
+                      <span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim fill-1">star</span>
+                      <span class="font-label-md text-label-md font-bold">4.98</span>
+                      <span class="text-on-surface-variant font-label-sm text-label-sm">(61 shoots)</span>
+                    </div>
+                  </div>
+                  <h3 class="font-headline-md text-headline-md uppercase text-on-surface leading-tight">Apex 1800
+                    Infinity Stage</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Seamless two-wall cyclorama with 16ft
+                    ceiling clearance, pre-hung motorized grid, and 63A distribution.</p>
+                </div>
+                <!-- Tech Spec Matrix Grid -->
+                <div class="grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-lg text-center">
+                  <div>
+                    <span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Ceiling
+                      Height</span>
+                    <span class="font-label-md text-label-md uppercase font-bold text-on-surface">16.5 Feet</span>
+                  </div>
+                  <div>
+                    <span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Load In</span>
+                    <span class="font-label-md text-label-md uppercase font-bold text-on-surface">Drive-in</span>
+                  </div>
+                  <div>
+                    <span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Dimensions</span>
+                    <span class="font-label-md text-label-md uppercase font-bold text-on-surface">1,850 Sq Ft</span>
+                  </div>
+                </div>
+                <!-- Action & Price Footer -->
+                <div class="flex items-center justify-between pt-space-xs">
+                  <div>
+                    <span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Standard Rate</span>
+                    <div class="font-headline-sm text-headline-sm text-on-surface">
+                      ₹2,100 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ hr</span>
+                    </div>
+                  </div>
+                  <button
+                    class="px-space-md py-2.5 bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-lg hover:bg-inverse-surface transition-colors shadow-sm"
+                    onclick="quickBook('Apex 1800 Infinity Stage')" type="button">
+                    Book Slot
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Card 3: Bengaluru Sound Isolation Lab -->
+            <article
+              class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+              <div class="relative h-64 w-full">
+                <div class="w-full h-full bg-cover bg-center"
+                  data-alt="A recording and dubbing studio suite in Indiranagar Bengaluru with high density fabric acoustic panels, Neumann microphone on heavy boom arm, music keyboard, and dual ultra-wide computer displays."
+                  style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrgdGW6nMtKM1wtef2mUY4B9_9suClBKn-_okh54MVqgrTszK8om5zWldR9rye4TJ2xEvPwz6MJ64l4NdX56Ixm_Gsn40WJZCOPMwV8XuQeH3SZ5T2ZQ1Mu8bKsSG8WHR8d-9vi8kro45TtVzFh9PNGb3KV_OjhfR9zC5bprwe4Ewy35ZLrmtZ9wvYdwIJBB0OuzgKGapnlCa9y9jVxlNnbdj2NvqViE4L-vAII48')">
+                </div>
+                <div class="absolute top-space-sm left-space-sm flex flex-col gap-1">
+                  <span
+                    class="bg-inverse-surface text-inverse-on-surface px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1 shadow-sm">
+                    <span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">verified</span>
+                    Audited May 2025
+                  </span>
+                  <span
+                    class="bg-tertiary text-on-tertiary px-space-xs py-0.5 rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider">
+                    Dolby 7.1 Certified
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-space-sm right-space-sm bg-surface px-space-sm py-1 rounded-DEFAULT font-label-md text-label-md uppercase text-on-surface shadow-sm">
+                  Indiranagar, Bengaluru
+                </div>
+              </div>
+              <div class="p-space-lg flex flex-col justify-between flex-grow gap-space-md">
+                <div class="flex flex-col gap-space-xs">
+                  <div class="flex items-center justify-between">
+                    <span class="font-label-sm text-label-sm uppercase text-secondary font-bold">Dubbing &amp; Audio
+                      Lab</span>
+                    <div class="flex items-center gap-1 text-on-surface">
+                      <span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim fill-1">star</span>
+                      <span class="font-label-md text-label-md font-bold">4.92</span>
+                      <span class="text-on-surface-variant font-label-sm text-label-sm">(48 shoots)</span>
+                    </div>
+                  </div>
+                  <h3 class="font-headline-md text-headline-md uppercase text-on-surface leading-tight">Wavefront
+                    Acoustics Lab</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Calibrated dubbing booth with zero
+                    crosstalk, Avid Pro Tools HDX rig, and reference Genelec SAM monitoring.</p>
+                </div>
+                <!-- Tech Spec Matrix Grid -->
+                <div class="grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-lg text-center">
+                  <div>
+                    <span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Noise Floor</span>
+                    <span class="font-label-md text-label-md uppercase font-bold text-on-surface">19.8 dBA</span>
+                  </div>
+                  <div>
+                    <span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Mic Array</span>
+                    <span class="font-label-md text-label-md uppercase font-bold text-on-surface">Neumann U87</span>
+                  </div>
+                  <div>
+                    <span class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Dimensions</span>
+                    <span class="font-label-md text-label-md uppercase font-bold text-on-surface">420 Sq Ft</span>
+                  </div>
+                </div>
+                <!-- Action & Price Footer -->
+                <div class="flex items-center justify-between pt-space-xs">
+                  <div>
+                    <span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Standard Rate</span>
+                    <div class="font-headline-sm text-headline-sm text-on-surface">
+                      ₹950 <span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/ hr</span>
+                    </div>
+                  </div>
+                  <button
+                    class="px-space-md py-2.5 bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-lg hover:bg-inverse-surface transition-colors shadow-sm"
+                    onclick="quickBook('Wavefront Acoustics Lab')" type="button">
+                    Book Slot
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Crew Add-On Teaser Module -->
+      <section class="w-full bg-surface-container-low px-margin-mobile lg:px-margin py-space-xl" id="crews">
+        <div
+          class="max-w-7xl mx-auto bg-surface-container-lowest p-space-lg lg:p-space-xl rounded-xl shadow-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+          <div class="lg:col-span-7 flex flex-col gap-space-md">
+            <div class="flex items-center gap-2">
+              <span
+                class="px-space-xs py-0.5 bg-secondary text-on-secondary rounded-DEFAULT font-label-sm text-label-sm uppercase tracking-wider">Crew
+                Dispatch</span>
+              <span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Turnkey
+                Production Support</span>
+            </div>
+            <h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">NEED A CREW TO GO WITH THE ROOM?
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Book verified DITs, podcast audio recordists, gaffers, teleprompter operators, and videographers who
+              arrive equipped and pre-briefed at your chosen studio.
+            </p>
+            <div class="flex flex-wrap gap-space-xs pt-space-xs">
+              <span
+                class="px-space-sm py-1 bg-surface-container rounded-DEFAULT font-label-sm text-label-sm uppercase text-on-surface">Cinematographers</span>
+              <span
+                class="px-space-sm py-1 bg-surface-container rounded-DEFAULT font-label-sm text-label-sm uppercase text-on-surface">Sound
+                Recordists</span>
+              <span
+                class="px-space-sm py-1 bg-surface-container rounded-DEFAULT font-label-sm text-label-sm uppercase text-on-surface">Gaffer
+                &amp; Grips</span>
+              <span
+                class="px-space-sm py-1 bg-surface-container rounded-DEFAULT font-label-sm text-label-sm uppercase text-on-surface">Podcast
+                Switchers</span>
+              <span
+                class="px-space-sm py-1 bg-surface-container rounded-DEFAULT font-label-sm text-label-sm uppercase text-on-surface">MUA
+                &amp; Stylists</span>
+            </div>
+            <div class="pt-space-sm">
+              <a class="inline-flex items-center gap-2 px-space-lg py-3 bg-inverse-surface text-inverse-on-surface font-label-lg text-label-lg uppercase tracking-wider rounded-lg hover:bg-primary-container transition-colors shadow-sm"
+                href="#">
+                <span>Configure Crew Bundle</span>
+                <span class="material-symbols-outlined text-[18px]">add_circle</span>
+              </a>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative">
+            <div class="relative h-72 w-full rounded-xl overflow-hidden shadow-md">
+              <div class="w-full h-full bg-cover bg-center"
+                data-alt="A professional Indian camera operator looking into a Sony FX6 cinema monitor on a tripod, smiling alongside a female sound technician wearing Beyerdynamic headphones in a sleek studio set."
+                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3pHAZCa4EanjGaED6VPF4Ko0EazAcGhmp08zCaRlI5i4zD6NYfcaV5y7b_2i_UljN82om1zwr3WWXmNgLUDlhixtrjoQf9c_GoySygzF5GPIJBnufcAeMkqU7wzVNU7R0kLKkOv42l4q4dq0-uD0DTaVBOmXcFvfT1ubz7vyYCycRmMD75RmnQ48OEnnKXOwsjJyhGoRo09bVKQvBaTtaP-M-EjX3VYaiB3W3r9A')">
+              </div>
+              <div
+                class="absolute bottom-space-sm left-space-sm right-space-sm bg-surface-container-lowest/90 backdrop-blur p-space-sm rounded-lg flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+                  <span class="font-label-md text-label-md uppercase text-on-surface font-bold">Crew Call Sync</span>
+                </div>
+                <span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Arrives 45m Prior to
+                  Call-Time</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Interactive Studio Modal Container (Hidden by Default) -->
+      <div
+        class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden items-center justify-center p-space-md"
+        id="bookingModal">
+        <div
+          class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-2xl p-space-lg flex flex-col gap-space-md">
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col">
+              <span class="font-label-sm text-label-sm uppercase text-primary font-bold">Instant Reserve Protocol</span>
+              <h3 class="font-headline-sm text-headline-sm uppercase text-on-surface" id="modalStudioTitle">Confirm
+                Stage Reservation</h3>
+            </div>
+            <button
+              class="w-8 h-8 rounded-DEFAULT bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-variant transition-colors"
+              onclick="closeModal()" type="button">
+              <span class="material-symbols-outlined text-[18px]">close</span>
+            </button>
+          </div>
+          <div
+            class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+            <div class="flex justify-between">
+              <span>Decibel Test:</span>
+              <span class="font-bold text-on-surface">Passed (&lt; 24 dBA)</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Direct Host Rate:</span>
+              <span class="font-bold text-on-surface">Standard No-Broker Pricing</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Cancellation:</span>
+              <span class="font-bold text-secondary">Free up to 12h before shoot</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="producerName">Lead
+              Producer / Creator Name</label>
+            <input
+              class="px-space-sm py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none"
+              id="producerName" placeholder="e.g. Siddharth Rao" type="text" />
+          </div>
+          <div class="flex flex-col gap-space-xs">
+            <label class="font-label-sm text-label-sm uppercase text-on-surface-variant" for="contactPhone">WhatsApp
+              Number for Instant Pass</label>
+            <input
+              class="px-space-sm py-2 bg-surface-container-low rounded-lg font-label-md text-label-md text-on-surface focus:outline-none"
+              id="contactPhone" placeholder="+91 98765 43210" type="tel" />
+          </div>
+          <button
+            class="w-full py-3 bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-wider rounded-lg hover:bg-inverse-surface transition-colors shadow-sm"
+            onclick="submitReservation()" type="button">
+            Confirm Booking &amp; Generate Access PIN
+          </button>
+          <span class="text-center font-label-sm text-label-sm uppercase text-on-surface-variant">Zero credit card
+            required to hold date for 30 minutes</span>
+        </div>
+      </div>
+      <!-- Closing Action Banner: LIGHTS. CAMERA. BOOK. -->
+      <section
+        class="w-full bg-surface-container-high px-margin-mobile lg:px-margin py-space-xl relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col items-center text-center gap-space-md relative z-10">
+          <div
+            class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-lowest rounded-DEFAULT text-on-surface shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-primary-container"></span>
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Instant Calendar
+              Reservation</span>
+          </div>
+          <h2 class="font-display text-display uppercase tracking-tight text-on-surface leading-none">
+            LIGHTS. CAMERA. <span class="text-primary-container">BOOK.</span>
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Stop spending hours DMing studios on social media. Join 1,200+ production houses, agencies, and podcasters
+            who book certified spaces with zero friction.
+          </p>
+          <div class="flex flex-wrap items-center justify-center gap-space-md pt-space-sm">
+            <a class="inline-flex items-center px-space-xl py-3.5 bg-primary-container text-on-primary font-label-lg text-label-lg uppercase tracking-wider rounded-lg shadow-md hover:bg-inverse-surface transition-colors"
+              href="#search-engine">
+              Find a Studio Now
+            </a>
+            <a class="inline-flex items-center px-space-xl py-3.5 bg-surface-container-lowest text-on-surface font-label-lg text-label-lg uppercase tracking-wider rounded-lg shadow-sm hover:bg-inverse-surface hover:text-on-primary transition-colors"
+              href="#">
+              I Own a Studio
+            </a>
+          </div>
+          <div
+            class="flex items-center gap-space-lg pt-space-md font-label-sm text-label-sm uppercase text-on-surface-variant">
+            <span>✓ 100% In-Person Audited</span>
+            <span class="w-1 h-1 rounded-full bg-outline"></span>
+            <span>✓ No Surprise Overtime Markups</span>
+            <span class="w-1 h-1 rounded-full bg-outline"></span>
+            <span>✓ Direct Studio Host Invoice</span>
+          </div>
+        </div>
+      </section>
+      <!-- Client-side Interactive Logic -->
+      <script>
+        function setCity(cityKey) {
+          const select = document.getElementById('locationInput');
+          if (select) {
+            select.value = cityKey;
+            select.focus();
+          }
+        }
+
+        function selectCategory(catKey) {
+          const select = document.getElementById('archetypeInput');
+          if (select) {
+            select.value = catKey;
+          }
+          const engine = document.getElementById('search-engine');
+          if (engine) {
+            engine.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+
+        function scrollArchetypes(direction) {
+          const scroller = document.getElementById('archetypeScroller');
+          if (scroller) {
+            scroller.scrollBy({ left: direction * 340, behavior: 'smooth' });
+          }
+        }
+
+        function triggerSearch() {
+          const city = document.getElementById('locationInput').value;
+          const archetype = document.getElementById('archetypeInput').value;
+          const date = document.getElementById('dateInput').value;
+          alert('Scanning ' + city.toUpperCase() + ' network for ' + archetype.toUpperCase() + ' on ' + date + '... Direct host results refreshed below!');
+          const trending = document.querySelector('section:has(.grid-cols-3)');
+          if (trending) {
+            trending.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+
+        function quickBook(studioName) {
+          const modal = document.getElementById('bookingModal');
+          const title = document.getElementById('modalStudioTitle');
+          if (modal && title) {
+            title.textContent = 'Reserve ' + studioName;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+          }
+        }
+
+        function closeModal() {
+          const modal = document.getElementById('bookingModal');
+          if (modal) {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+          }
+        }
+
+        function submitReservation() {
+          const name = document.getElementById('producerName').value || 'Producer';
+          alert('Reservation confirmed for ' + name + '! Your BK3 Studio Access PIN has been dispatched via SMS/WhatsApp with direct host entry directions.');
+          closeModal();
+        }
+      </script>
+    </div>
+  </main>
+  <footer class="w-full bg-surface-container-low border-t border-surface-variant">
+    <div class="w-full px-margin-mobile lg:px-margin py-space-xl">
+      <div class="flex items-center gap-1.5 mb-space-lg">
+        <div class="w-1.5 h-6 bg-primary-container"></div>
+        <div class="w-1.5 h-4 bg-secondary-container"></div>
+        <div class="w-1.5 h-8 bg-tertiary-fixed-dim"></div>
+        <div class="w-1.5 h-3 bg-secondary"></div>
+        <div class="w-1.5 h-7 bg-primary"></div><span
+          class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-widest pl-2">BK3 Soundstage
+          &amp; Acoustics Index</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter">
+        <div class="lg:col-span-2 flex flex-col gap-space-sm pr-space-lg">
+          <div class="flex items-center gap-space-xs"><span
+              class="font-headline-md text-headline-md uppercase tracking-tight text-on-surface">BK3 Studios</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">India's premier aggregation and
+            instant-verification booking marketplace for soundstages, commercial recording spaces, Chroma rigs, and
+            broadcast infrastructure.</p>
+          <div class="flex flex-col gap-1 pt-space-sm font-body-sm text-body-sm text-on-surface-variant">
+            <div><strong class="text-on-surface font-label-md text-label-md uppercase">Headquarters:</strong> A-703,
+              Amit Colori Phase 1, Undri, Pune, India</div>
+            <div><strong class="text-on-surface font-label-md text-label-md uppercase">Contact:</strong> <a
+                class="hover:text-primary transition-colors" href="mailto:team@bk3studios.com">team@bk3studios.com</a> |
+              <a class="hover:text-primary transition-colors" href="tel:+918147448259">+91 8147448259</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface mb-space-md">Navigation</h4>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+            <li><a class="hover:text-on-surface transition-colors" data-path="home" href="#">Home &amp; Hero</a></li>
+            <li><a class="hover:text-on-surface transition-colors" data-path="the-network" href="#">The Network &amp;
+                Studio Map</a></li>
+            <li><a class="hover:text-on-surface transition-colors" data-path="why-bk3" href="#">Why BK3 &amp; Proof</a>
+            </li>
+            <li><a class="hover:text-on-surface transition-colors" data-path="what-we-do" href="#">What We Do &amp;
+                Services</a></li>
+            <li><a class="hover:text-on-surface transition-colors" data-path="studio-partners" href="#">Studio Partners
+                &amp; ERP</a></li>
+            <li><a class="hover:text-on-surface transition-colors" data-path="contact-us" href="#">Contact &amp;
+                WhatsApp Concierge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface mb-space-md">Production Suites
+          </h4>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+            <li class="hover:text-on-surface cursor-pointer">Recording &amp; Dubbing</li>
+            <li class="hover:text-on-surface cursor-pointer">Chroma &amp; Green Screen</li>
+            <li class="hover:text-on-surface cursor-pointer">Commercial Soundstages</li>
+            <li class="hover:text-on-surface cursor-pointer">Podcast &amp; Vodcast Suites</li>
+            <li class="hover:text-on-surface cursor-pointer">Jam Rooms &amp; Rehearsal</li>
+            <li class="hover:text-on-surface cursor-pointer">Virtual Production Rigs</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface mb-space-md">Partner Solutions
+          </h4>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+            <li><a class="hover:text-on-surface transition-colors" data-path="studio-partners" href="#">Free Partner
+                Onboarding</a></li>
+            <li><a class="hover:text-on-surface transition-colors" data-path="studio-partners" href="#">BK3 Studio ERP
+                Software</a></li>
+            <li><a class="hover:text-on-surface transition-colors" data-path="contact-us" href="#">Corporate &amp;
+                Agency Accounts</a></li>
+            <li><a class="hover:text-on-surface transition-colors" data-path="why-bk3" href="#">Decibel Calibration
+                Metric</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="mt-space-xl pt-space-md border-t border-surface-variant flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm uppercase text-on-surface-variant">
+        <p>© 2025 BK3 Studios India Private Limited. All rights reserved.</p>
+        <div class="flex items-center gap-space-md"><span>Decibel Calibrated</span><span
+            class="w-1 h-1 rounded-full bg-outline"></span><span>Verified Gear Lists</span><span
+            class="w-1 h-1 rounded-full bg-outline"></span><span>Direct Host Settlement</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const menuButton = document.getElementById("mobileMenuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const menuIcon = document.getElementById("mobileMenuIcon");
+
+      if (!menuButton || !mobileMenu || !menuIcon) return;
+
+      const closeMenu = () => {
+        mobileMenu.classList.add("hidden");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuIcon.textContent = "menu";
+      };
+
+      menuButton.addEventListener("click", () => {
+        const isOpening = mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden");
+        menuButton.setAttribute("aria-expanded", String(isOpening));
+        menuIcon.textContent = isOpening ? "close" : "menu";
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", closeMenu);
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!mobileMenu.contains(event.target) && !menuButton.contains(event.target)) {
+          closeMenu();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") closeMenu();
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1024) closeMenu();
+      });
+    })();
+  </script>
+</body>
+
+</html>
