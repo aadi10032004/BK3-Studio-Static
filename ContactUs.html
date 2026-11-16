@@ -32,50 +32,20 @@
     <!-- Mobile Navigation Menu -->
     <div id="mobileMenu"
       class="hidden lg:hidden absolute top-full left-0 w-full bg-surface-container-lowest border-t border-surface-variant shadow-lg">
-      <nav class="hidden lg:flex items-center gap-space-lg"
-  data-active-classes="text-primary-container font-bold border-b-2 border-primary-container pb-0.5">
-
-  <a
-    class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
-    href="/">
-    Home
-  </a>
-
-  <a
-    class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
-    data-path="the-network"
-    href="/the-network">
-    The Network
-  </a>
-
-  <a
-    class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
-    data-path="why-bk3"
-    href="/why-bk3">
-    Why BK3
-  </a>
-
-  <a
-    class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
-    data-path="what-we-do"
-    href="/what-we-do">
-    What We Do
-  </a>
-
-  <a
-    class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
-    data-path="studio-partners"
-    href="/studio-partners">
-    Studio Partners
-  </a>
-
-  <a
-    class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors"
-    href="/ContactUs">
-    Contact Us
-  </a>
-
-</nav>
+      <nav class="flex flex-col px-margin-mobile py-space-md gap-1" aria-label="Mobile navigation">
+        <a href="/" class="mobile-nav-link">Home</a>
+        <a href="/the-network" data-path="the-network" class="mobile-nav-link">The Network</a>
+        <a href="/why-bk3" data-path="why-bk3" class="mobile-nav-link">Why BK3</a>
+        <a href="/what-we-do" data-path="what-we-do" class="mobile-nav-link">What We Do</a>
+        <a href="/studio-partners" data-path="studio-partners" class="mobile-nav-link">Studio Partners</a>
+        <a href="/ContactUs" class="mobile-nav-link">Contact Us</a>
+        <div class="border-t border-surface-variant mt-space-sm pt-space-md flex flex-col gap-space-sm">
+          <a href="/studio-partners" data-path="studio-partners"
+            class="mobile-nav-link border border-on-surface text-center rounded-lg">I Own a Studio</a>
+          <a href="/the-network" data-path="the-network"
+            class="inline-flex items-center justify-center px-space-lg py-3 bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg uppercase tracking-wider">Find a Studio</a>
+        </div>
+      </nav>
     </div>
   </header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
 <!-- Top Technical Breadcrumb & Meta Bar -->
